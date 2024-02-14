@@ -1,9 +1,6 @@
-import React from 'react'
+import cardItems from "./reducer";
+ import {combineReducers} from 'redux';
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
-
-export default index
+export default combineReducers({
+  cardItems,
+})

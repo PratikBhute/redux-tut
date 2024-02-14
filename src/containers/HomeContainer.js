@@ -1,9 +1,13 @@
-import React from 'react'
+import Home from "../components/Home";
+import {connect} from 'react-redux'
+import { addToCart } from "../services/actions/actions";
 
-const HomeContainer = () => {
-  return (
-    <div>HomeContainer</div>
-  )
-}
+const mapStateToProps = state =>({
+    cardData: state
+})
 
-export default HomeContainer
+const mapDispatchToProps = dispatch => ({ 
+    addCartHandlar: data => dispatch(addToCart(data))
+})
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
+// export default Home

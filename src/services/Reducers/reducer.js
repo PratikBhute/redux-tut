@@ -1,9 +1,19 @@
-import React from 'react'
+import { ADD_TO_CART } from "../constants";
 
-const reducer = () => {
-  return (
-    <div>reducer</div>
-  )
+const initialState ={
+  cardData: []
 }
+export default function cardItems(state = initialState, action){
+  switch (action.type) {
+    case ADD_TO_CART:
+      console.log('Reducer', action )
+      return {
+        ...state,
+        cardData: action.data
+      }
+      break;
+      default: 
+        return state
+  }
 
-export default reducer
+}
