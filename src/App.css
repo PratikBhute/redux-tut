@@ -20,7 +20,6 @@
   
 }
 .btn-wrapper button{
-  
     background-color: green;
     color: white;
     padding: 4px;
@@ -29,10 +28,31 @@
     box-shadow: #166307 1px 3px 5px ;
 }
 .cart-button img{
-  width: 120px;
+  width: 200px;
   position: absolute !important;
-  right: 30%;
-  top: 5%;
+  right: 35%;
+  top: 0%;
 }
 
+.cart-count{
+  position: absolute !important;
+  right:41%;
+  top:12%;
+  width: 30px;
+
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+color: rgb(227, 9, 9);
+font-weight: bold;  
+  
+}
+.remove-btn-wrapper button{
+  background-color: red;
+  color: white;
+  padding: 4px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: #166307 1px 3px 5px ;
+}
 /*  */
